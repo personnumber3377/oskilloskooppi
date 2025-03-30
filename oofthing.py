@@ -32,7 +32,8 @@ def fit_function(U_initial, U_final, t, tau): # tau is the variable we need to b
     return U_final - (U_final - U_initial)*e**(-t/tau)
 
 def cut_data(times, voltages):
-    start = 775+5 # 600
+    # start = 775+5 # 600
+    start = 775+6 # 600
     end = 795
     times = times[start:end]
     voltages = voltages[start:end]
